@@ -62,6 +62,12 @@ Accessing web page:
 52.204.127.145:9090
 
 
+$task5:
+creating volume
+docker volume create laveenaq5
+
+attaching volume to container:
+docker run -it --name laveena5q15 -v laveenaq5:/etc/passwd- -v laveenaq51:/adhocvol/user.txt alpine sh
 
 
 
