@@ -1,1 +1,12 @@
 #test of docker
+task1
+
+Dockerfile.txt
+FROM alpine
+MAINTAINER laveena.j.21@gmail.com
+
+building image:
+docker build -t alpine:laveena -f Dockerfile .
+
+run container:
+docker run --name ashuc1q1  -d alpine:laveena sh date+%T>question1.txt
