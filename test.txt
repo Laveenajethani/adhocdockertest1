@@ -1,5 +1,5 @@
 #test of docker
-task1
+$task1
 
 Dockerfile.txt
 FROM alpine
@@ -10,3 +10,11 @@ docker build -t alpine:laveena -f Dockerfile .
 
 run container:
 docker run --name ashuc1q1  -d alpine:laveena sh date+%T>question1.txt
+
+starting container:
+docker start ashuc1q1
+
+for see output:
+docker run -it alpine:laveena sh
+/#ls
+/#cat question1.txt
