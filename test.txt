@@ -63,7 +63,7 @@ Accessing web page:
 
 
 $task5:
-creating volume
+creating volume:
 docker volume create laveenaq5
 
 attaching volume to container:
