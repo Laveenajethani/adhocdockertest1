@@ -41,5 +41,27 @@ building container:
 docker run --name laveenaj3q3 -p 6666:80 -d dockerashu/ckad:v2 
 
 
+$task4:
+DOCKERFILE:
+FROM centos 
+MAINTAINER laveena.j.21@gmail.com
+RUN yum install httpd -y
+RUN mkdir /mycode
+COPY index.html /mycode/index.html
+copy mycode  /var/www/html
+EXPOSE 80
+ENTRYPOINT httpd -DFOREGROUND
+
+Building image:
+docker build -t laveena:q4 -f Dockerfile .
+
+creating container:
+docker run --name laveenaq4 -itd -p 9090:80 laveena:q4
+
+Accessing web page:
+52.204.127.145:9090
+
+
+
 
 
