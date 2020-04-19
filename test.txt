@@ -21,4 +21,14 @@ docker run -it alpine:laveena sh
 
 
 $task2
+building image:
 docker build -t adhoc:laveena  https://github.com/redashu/summer2020dockertest.git
+
+taging it:
+docker tag adhoc:laveena laveenajethani/adhoc:laveena
+login:
+docker login
+pushing image:
+docker push laveenajethani/adhoc:laveena
+
+
