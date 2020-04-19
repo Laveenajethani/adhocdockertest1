@@ -27,17 +27,19 @@ docker build -t adhoc:laveena  https://github.com/redashu/summer2020dockertest.g
 taging it:
 docker tag adhoc:laveena laveenajethani/adhoc:laveena
 
-
-$task3
-docker pull dockerashu/ckad:v2
-docker run --name laveenaj3q3 -p 6666:80 -d dockerashu/ckad:v2 
-
-
-
 login:
 docker login
 
 pushing image:
 docker push laveenajethani/adhoc:laveena
+
+
+$task3
+pulling image:
+docker pull dockerashu/ckad:v2
+building container:
+docker run --name laveenaj3q3 -p 6666:80 -d dockerashu/ckad:v2 
+
+
 
 
