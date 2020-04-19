@@ -18,3 +18,7 @@ for see output:
 docker run -it alpine:laveena sh
 /#ls
 /#cat question1.txt
+
+
+$task2
+docker build -t adhoc:laveena  https://github.com/redashu/summer2020dockertest.git
